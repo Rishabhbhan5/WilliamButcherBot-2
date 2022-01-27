@@ -17,7 +17,7 @@ DEFAULT_DOWNLOAD_DIR = 'downloads/vcbot/'
 
 api_id=Config.API_ID
 api_hash=Config.API_HASH
-session_name=Config.STRING_SESSION
+session_name=Config.SESSION_STRING
 app = Client(session_name, api_id, api_hash)
 
 # userbot and contacts filter by dashezup's tgvc-userbot
