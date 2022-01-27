@@ -15,6 +15,8 @@ import aiofiles
 VOICE_CHATS = {}
 DEFAULT_DOWNLOAD_DIR = 'downloads/vcbot/'
 
+app = Client(SESSION_STRING, API_ID, API_HASH)
+
 
 # userbot and contacts filter by dashezup's tgvc-userbot
 self_or_contact_filter = filters.create(
