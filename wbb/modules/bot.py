@@ -3,7 +3,7 @@
 import os
 from pytgcalls import GroupCall
 import ffmpeg
-from wbb import Config
+from wbb import (SESSION_STRING, API_ID, API_HASH)
 from datetime import datetime
 from pyrogram import filters, Client, idle
 import requests
@@ -18,7 +18,7 @@ DEFAULT_DOWNLOAD_DIR = 'downloads/vcbot/'
 api_id=wbb.API_ID
 api_hash=wbb.API_HASH
 session_name=wbb.SESSION_STRING
-app = Client(session_name, api_id, api_hash)
+app = Client(session_string, api_id, api_hash)
 
 # userbot and contacts filter by dashezup's tgvc-userbot
 self_or_contact_filter = filters.create(
