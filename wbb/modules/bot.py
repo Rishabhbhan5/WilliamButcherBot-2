@@ -3,7 +3,7 @@
 import os
 from pytgcalls import GroupCall
 import ffmpeg
-from config import Config
+from sample_config import Config
 from datetime import datetime
 from pyrogram import filters, Client, idle
 import requests
@@ -15,8 +15,8 @@ import aiofiles
 VOICE_CHATS = {}
 DEFAULT_DOWNLOAD_DIR = 'downloads/vcbot/'
 
-api_id=Config.API_ID
-api_hash=Config.API_HASH
+api_id=Sample_Config.API_ID
+api_hash=Sample_Config.API_HASH
 session_name=Config.SESSION_STRING
 app = Client(session_name, api_id, api_hash)
 
