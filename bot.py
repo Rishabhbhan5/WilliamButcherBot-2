@@ -3,7 +3,7 @@
 import os
 from pytgcalls import GroupCall
 import ffmpeg
-from config import Config
+from sample_config import Config
 from datetime import datetime
 from pyrogram import filters, Client, idle
 import requests
